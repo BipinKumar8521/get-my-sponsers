@@ -1,0 +1,15 @@
+.for-sponsers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsers-card {
+    width: 80%;
+    margin: 5%;
+}
+
+.sponsers-card h1 {
+    text-align: center;
+    color: #c6106b;
+}

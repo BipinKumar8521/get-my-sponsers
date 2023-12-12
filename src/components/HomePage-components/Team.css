@@ -1,0 +1,56 @@
+ .team {
+     padding-top: 11vh;
+     background-color: rgb(65 205 205);
+     min-height: 100vh;
+ }
+
+ .team h1 {
+     font-size: 3rem;
+     font-weight: 600;
+     margin-bottom: 2%;
+     text-align: center;
+ }
+
+
+ .team-container {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     padding: 2%;
+ }
+
+ .team-card {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 29%;
+     gap: 2rem;
+     margin: 2%;
+     padding: 2%;
+     background-color: white;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .team-card.team-card:hover {
+     transform: scale(1.02);
+ }
+
+ .team-image {
+     height: 7rem;
+     width: 7rem;
+ }
+
+
+ @media screen and (max-width: 768px) {
+     .team-card {
+         width: 45%;
+     }
+ }
+
+ @media screen and (max-width: 450px) {
+     .team-card {
+         width: 70%;
+     }
+ }

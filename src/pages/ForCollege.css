@@ -1,0 +1,15 @@
+.for-college {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.college-card {
+    width: 80%;
+    margin: 5%;
+}
+
+.college-card h1 {
+    text-align: center;
+    color: #c6106b;
+}

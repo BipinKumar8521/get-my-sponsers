@@ -1,0 +1,80 @@
+.company {
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.company h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.company-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    gap: 13vw;
+    padding: 0 29vw;
+
+}
+
+.company-details {
+    position: relative;
+    min-width: 40vw;
+    padding: 1rem;
+    background-color: cornsilk;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.company-details:hover {
+    transform: scale(1.02);
+}
+
+
+.company-logo img {
+    object-fit: contain;
+    margin-bottom: 2%;
+    border-radius: 10%;
+}
+
+.company-name {
+    margin: 0.4rem 0;
+}
+
+.company-name h3 {
+    font-size: 1.5rem;
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 5%;
+    border: 1px solid rgb(65 205 205);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: rgb(65 205 205);
+    color: white;
+    transform: scale(1.01);
+    font-weight: bold;
+}
+
+.left-arrow {
+    left: 40%;
+}
+
+.right-arrow {
+    right: 40%;
+}

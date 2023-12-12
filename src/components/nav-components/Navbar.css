@@ -1,0 +1,98 @@
+/* FILEPATH: /C:/Users/bipin/OneDrive/Desktop/vs code/website/Get my Sponser/get-my-sponsers/src/components/nav-components/Navbar.css */
+
+header {
+    background-color: #bdbbbb;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.nav-link:hover {
+    color: #555;
+}
+
+.hamburger {
+    display: none;
+
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px;
+    gap: 5px;
+    border: none;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.hamburger span {
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 25px;
+}
+
+.drawer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+
+    }
+
+    .bar {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links-container {
+        display: none;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
